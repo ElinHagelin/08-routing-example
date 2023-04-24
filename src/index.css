@@ -2,3 +2,16 @@ body {
   font-size: 140%;
   background-color: lightgray;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header>* {
+  margin: 1em
+}
+
+main {
+  text-align: center;
+}

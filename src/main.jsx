@@ -5,6 +5,8 @@ import Root from './routes/Root.jsx'
 import Start from './routes/Start.jsx'
 import Products from './routes/Products.jsx'
 import './index.css'
+import About from './routes/About.jsx'
+import ErrorPage from './routes/ErrorPage.jsx'
 
 // Skapa en router med konfiguration, som beskriver all routes som ska finas in appen.
 const router = createHashRouter([
@@ -22,8 +24,14 @@ const router = createHashRouter([
       {
         path: 'products',
         element: <Products />
+      },
+      {
+        path: 'about',
+        element: <About />
       }
-    ]
+    ],
+    // Används om URL inte matchar någon tidigare
+    errorElement: <ErrorPage />
   }
 ])
 
