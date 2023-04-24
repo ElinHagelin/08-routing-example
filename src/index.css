@@ -3,13 +3,23 @@ body {
   background-color: lightgray;
 }
 
-header {
+header nav {
   display: flex;
   justify-content: center;
 }
 
-header>* {
-  margin: 1em
+header nav a {
+  padding: 1em;
+  margin: 0 0.5em;
+  transition: 1s all;
+}
+
+header nav a:hover {
+  background-color: beige;
+}
+
+header nav a.active {
+  background-color: rgb(246, 246, 191);
 }
 
 main {
