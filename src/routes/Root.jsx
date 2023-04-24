@@ -1,8 +1,15 @@
+import { Link, Outlet } from "react-router-dom"
 
 
 const Root = () => (
 	<div>
-		Root!
+		<header>
+			<Link to="/"> Start </Link>
+			<Link to="/products"> Products </Link>
+		</header>
+		<main>
+			<Outlet />
+		</main>
 	</div>
 )
 
